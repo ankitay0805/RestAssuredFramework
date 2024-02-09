@@ -1,0 +1,373 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "collaborative",
+    "external_urls",
+    "followers",
+    "href",
+    "id",
+    "images",
+    "primary_color",
+    "name",
+    "description",
+    "type",
+    "uri",
+    "owner",
+    "public",
+    "snapshot_id",
+    "tracks"
+  ],
+  "properties": {
+    "collaborative": {
+      "type": "boolean",
+      "default": false,
+      "title": "The collaborative Schema",
+      "examples": [
+        false
+      ]
+    },
+    "external_urls": {
+      "type": "object",
+      "default": {},
+      "title": "The external_urls Schema",
+      "required": [
+        "spotify"
+      ],
+      "properties": {
+        "spotify": {
+          "type": "string",
+          "default": "",
+          "title": "The spotify Schema",
+          "examples": [
+            "https://open.spotify.com/playlist/181QfXoneSlKVS1vQhIRel"
+          ]
+        }
+      },
+      "examples": [{
+        "spotify": "https://open.spotify.com/playlist/181QfXoneSlKVS1vQhIRel"
+      }]
+    },
+    "followers": {
+      "type": "object",
+      "default": {},
+      "title": "The followers Schema",
+      "required": [
+        "href",
+        "total"
+      ],
+      "properties": {
+        "href": {
+          "type": "null",
+          "default": null,
+          "title": "The href Schema",
+          "examples": [
+            null
+          ]
+        },
+        "total": {
+          "type": "integer",
+          "default": 0,
+          "title": "The total Schema",
+          "examples": [
+            0
+          ]
+        }
+      },
+      "examples": [{
+        "href": null,
+        "total": 0
+      }]
+    },
+    "href": {
+      "type": "string",
+      "default": "",
+      "title": "The href Schema",
+      "examples": [
+        "https://api.spotify.com/v1/playlists/181QfXoneSlKVS1vQhIRel"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "default": "",
+      "title": "The id Schema",
+      "examples": [
+        "181QfXoneSlKVS1vQhIRel"
+      ]
+    },
+    "images": {
+      "type": "null",
+      "default": null,
+      "title": "The images Schema",
+      "examples": [
+        null
+      ]
+    },
+    "primary_color": {
+      "type": "null",
+      "default": null,
+      "title": "The primary_color Schema",
+      "examples": [
+        null
+      ]
+    },
+    "name": {
+      "type": "string",
+      "default": "",
+      "title": "The name Schema",
+      "examples": [
+        "2nd playlist"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "default": "",
+      "title": "The description Schema",
+      "examples": [
+        "New 2nd playlist description"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "default": "",
+      "title": "The type Schema",
+      "examples": [
+        "playlist"
+      ]
+    },
+    "uri": {
+      "type": "string",
+      "default": "",
+      "title": "The uri Schema",
+      "examples": [
+        "spotify:playlist:181QfXoneSlKVS1vQhIRel"
+      ]
+    },
+    "owner": {
+      "type": "object",
+      "default": {},
+      "title": "The owner Schema",
+      "required": [
+        "href",
+        "id",
+        "type",
+        "uri",
+        "display_name",
+        "external_urls"
+      ],
+      "properties": {
+        "href": {
+          "type": "string",
+          "default": "",
+          "title": "The href Schema",
+          "examples": [
+            "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "default": "",
+          "title": "The id Schema",
+          "examples": [
+            "31nlhiawfc75bhow26i52p2vbxoa"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "default": "",
+          "title": "The type Schema",
+          "examples": [
+            "user"
+          ]
+        },
+        "uri": {
+          "type": "string",
+          "default": "",
+          "title": "The uri Schema",
+          "examples": [
+            "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+          ]
+        },
+        "display_name": {
+          "type": "string",
+          "default": "",
+          "title": "The display_name Schema",
+          "examples": [
+            "ankita"
+          ]
+        },
+        "external_urls": {
+          "type": "object",
+          "default": {},
+          "title": "The external_urls Schema",
+          "required": [
+            "spotify"
+          ],
+          "properties": {
+            "spotify": {
+              "type": "string",
+              "default": "",
+              "title": "The spotify Schema",
+              "examples": [
+                "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              ]
+            }
+          },
+          "examples": [{
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          }]
+        }
+      },
+      "examples": [{
+        "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+        "id": "31nlhiawfc75bhow26i52p2vbxoa",
+        "type": "user",
+        "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa",
+        "display_name": "ankita",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+        }
+      }]
+    },
+    "public": {
+      "type": "boolean",
+      "default": false,
+      "title": "The public Schema",
+      "examples": [
+        true
+      ]
+    },
+    "snapshot_id": {
+      "type": "string",
+      "default": "",
+      "title": "The snapshot_id Schema",
+      "examples": [
+        "MixhZTRkM2NjNmYyZmI1MjEzODY5YzE3MzA4NDc0M2U3N2NkMDVkYTA3"
+      ]
+    },
+    "tracks": {
+      "type": "object",
+      "default": {},
+      "title": "The tracks Schema",
+      "required": [
+        "limit",
+        "next",
+        "offset",
+        "previous",
+        "href",
+        "total",
+        "items"
+      ],
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "default": 0,
+          "title": "The limit Schema",
+          "examples": [
+            0
+          ]
+        },
+        "next": {
+          "type": "null",
+          "default": null,
+          "title": "The next Schema",
+          "examples": [
+            null
+          ]
+        },
+        "offset": {
+          "type": "integer",
+          "default": 0,
+          "title": "The offset Schema",
+          "examples": [
+            0
+          ]
+        },
+        "previous": {
+          "type": "null",
+          "default": null,
+          "title": "The previous Schema",
+          "examples": [
+            null
+          ]
+        },
+        "href": {
+          "type": "string",
+          "default": "",
+          "title": "The href Schema",
+          "examples": [
+            "https://api.spotify.com/v1/playlists/181QfXoneSlKVS1vQhIRel/tracks?offset=0\u0026limit=0"
+          ]
+        },
+        "total": {
+          "type": "integer",
+          "default": 0,
+          "title": "The total Schema",
+          "examples": [
+            0
+          ]
+        },
+        "items": {
+          "type": "array",
+          "default": [],
+          "title": "The items Schema",
+          "items": {},
+          "examples": [
+            []
+          ]
+        }
+      },
+      "examples": [{
+        "limit": 0,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "href": "https://api.spotify.com/v1/playlists/181QfXoneSlKVS1vQhIRel/tracks?offset=0\u0026limit=0",
+        "total": 0,
+        "items": []
+      }]
+    }
+  },
+  "examples": [{
+    "collaborative": false,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/playlist/181QfXoneSlKVS1vQhIRel"
+    },
+    "followers": {
+      "href": null,
+      "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/181QfXoneSlKVS1vQhIRel",
+    "id": "181QfXoneSlKVS1vQhIRel",
+    "images": null,
+    "primary_color": null,
+    "name": "2nd playlist",
+    "description": "New 2nd playlist description",
+    "type": "playlist",
+    "uri": "spotify:playlist:181QfXoneSlKVS1vQhIRel",
+    "owner": {
+      "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+      "id": "31nlhiawfc75bhow26i52p2vbxoa",
+      "type": "user",
+      "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa",
+      "display_name": "ankita",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+      }
+    },
+    "public": true,
+    "snapshot_id": "MixhZTRkM2NjNmYyZmI1MjEzODY5YzE3MzA4NDc0M2U3N2NkMDVkYTA3",
+    "tracks": {
+      "limit": 0,
+      "next": null,
+      "offset": 0,
+      "previous": null,
+      "href": "https://api.spotify.com/v1/playlists/181QfXoneSlKVS1vQhIRel/tracks?offset=0\u0026limit=0",
+      "total": 0,
+      "items": []
+    }
+  }]
+}

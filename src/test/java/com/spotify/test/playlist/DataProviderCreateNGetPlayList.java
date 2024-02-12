@@ -11,11 +11,11 @@ import org.testng.annotations.DataProvider;
 import java.lang.reflect.Method;
 
 public class DataProviderCreateNGetPlayList {
-    @BeforeMethod
+    /*@BeforeMethod
     public void threadCHeck(Method m){
         System.out.println(" starting of the thread" + m.getName());
         System.out.println("thread id " + Thread.currentThread().threadId());
-    }
+    }*/
     UpdatePlayList updatePlayList = new UpdatePlayList();
 
     @Step

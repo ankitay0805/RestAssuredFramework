@@ -30,7 +30,7 @@
                 <version>3.1.2</version>
                 <configuration>
                     <parallel>methods</parallel>
-                    <threadsCount>10</threadsCount>
+                    <threadCount>10</threadCount>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>

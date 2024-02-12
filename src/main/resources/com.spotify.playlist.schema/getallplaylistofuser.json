@@ -1,0 +1,2623 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "href",
+    "items",
+    "limit",
+    "next",
+    "offset",
+    "previous",
+    "total"
+  ],
+  "properties": {
+    "href": {
+      "type": "string",
+      "default": "",
+      "title": "The href Schema",
+      "examples": [
+        "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa/playlists?offset=0\u0026limit=20"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "default": [],
+      "title": "The items Schema",
+      "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+          "collaborative",
+          "description",
+          "external_urls",
+          "href",
+          "id",
+          "images",
+          "name",
+          "owner",
+          "primary_color",
+          "public",
+          "snapshot_id",
+          "tracks",
+          "type",
+          "uri"
+        ],
+        "properties": {
+          "collaborative": {
+            "type": "boolean",
+            "title": "The collaborative Schema",
+            "examples": [
+              false
+            ]
+          },
+          "description": {
+            "type": "string",
+            "title": "The description Schema",
+            "examples": [
+              "UPDATE the description",
+              "New 2nd playlist description",
+              "Updated first playlist description"
+            ]
+          },
+          "external_urls": {
+            "type": "object",
+            "title": "The external_urls Schema",
+            "required": [
+              "spotify"
+            ],
+            "properties": {
+              "spotify": {
+                "type": "string",
+                "title": "The spotify Schema",
+                "examples": [
+                  "https://open.spotify.com/playlist/3TZpE4oGblaYIJcDXFk4oA",
+                  "https://open.spotify.com/playlist/1RZmAswH26MZciFpC0XNKC",
+                  "https://open.spotify.com/playlist/0zAwBomCOTrbZiTOWDpHZp",
+                  "https://open.spotify.com/playlist/1dqNE80qxZrTGMqWxVdN98",
+                  "https://open.spotify.com/playlist/0F9LO13oLjHLdM9ZYNxi80",
+                  "https://open.spotify.com/playlist/07GthWlrpsj5XvG4Fm1len",
+                  "https://open.spotify.com/playlist/5yhltShBAtekFXfSrnXba8",
+                  "https://open.spotify.com/playlist/2jDfoKIwCTp4D8qzf0h1hr",
+                  "https://open.spotify.com/playlist/0aNoAEeuH42KbZFi8OMMfr",
+                  "https://open.spotify.com/playlist/3MEvF0Au47FMk0uKxdkG6X",
+                  "https://open.spotify.com/playlist/0bEIu56nC9SS16wEsk4B9g",
+                  "https://open.spotify.com/playlist/5hvq0TiMcZx5fjO5980vFh",
+                  "https://open.spotify.com/playlist/0TtBI8L8ooOLNafmVjlS5y",
+                  "https://open.spotify.com/playlist/5LdUmQ2ZFMLGkcvt3Lx83I",
+                  "https://open.spotify.com/playlist/3lfyZHRZuyP6DVuXhm7NLW",
+                  "https://open.spotify.com/playlist/2qJj9o3BZPnaT8JZbmjydM",
+                  "https://open.spotify.com/playlist/06xHfBS3M9QLoilpl9D92F",
+                  "https://open.spotify.com/playlist/3KlPASKm9QGTbNivOu22m5",
+                  "https://open.spotify.com/playlist/20NyJRVAuCnbkqOBMJqy1R",
+                  "https://open.spotify.com/playlist/4IRaRB5ulhPj4JcpMgLTpm"
+                ]
+              }
+            },
+            "examples": [{
+              "spotify": "https://open.spotify.com/playlist/3TZpE4oGblaYIJcDXFk4oA"
+            },
+              {
+                "spotify": "https://open.spotify.com/playlist/1RZmAswH26MZciFpC0XNKC"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/0zAwBomCOTrbZiTOWDpHZp"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/1dqNE80qxZrTGMqWxVdN98"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/0F9LO13oLjHLdM9ZYNxi80"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/07GthWlrpsj5XvG4Fm1len"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/5yhltShBAtekFXfSrnXba8"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/2jDfoKIwCTp4D8qzf0h1hr"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/0aNoAEeuH42KbZFi8OMMfr"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/3MEvF0Au47FMk0uKxdkG6X"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/0bEIu56nC9SS16wEsk4B9g"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/5hvq0TiMcZx5fjO5980vFh"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/0TtBI8L8ooOLNafmVjlS5y"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/5LdUmQ2ZFMLGkcvt3Lx83I"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/3lfyZHRZuyP6DVuXhm7NLW"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/2qJj9o3BZPnaT8JZbmjydM"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/06xHfBS3M9QLoilpl9D92F"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/3KlPASKm9QGTbNivOu22m5"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/20NyJRVAuCnbkqOBMJqy1R"
+              },
+              {
+                "spotify": "https://open.spotify.com/playlist/4IRaRB5ulhPj4JcpMgLTpm"
+              }]
+          },
+          "href": {
+            "type": "string",
+            "title": "The href Schema",
+            "examples": [
+              "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA",
+              "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC",
+              "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp",
+              "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98",
+              "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80",
+              "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len",
+              "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8",
+              "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr",
+              "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr",
+              "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X",
+              "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g",
+              "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh",
+              "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y",
+              "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I",
+              "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW",
+              "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM",
+              "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F",
+              "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5",
+              "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R",
+              "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "title": "The id Schema",
+            "examples": [
+              "3TZpE4oGblaYIJcDXFk4oA",
+              "1RZmAswH26MZciFpC0XNKC",
+              "0zAwBomCOTrbZiTOWDpHZp",
+              "1dqNE80qxZrTGMqWxVdN98",
+              "0F9LO13oLjHLdM9ZYNxi80",
+              "07GthWlrpsj5XvG4Fm1len",
+              "5yhltShBAtekFXfSrnXba8",
+              "2jDfoKIwCTp4D8qzf0h1hr",
+              "0aNoAEeuH42KbZFi8OMMfr",
+              "3MEvF0Au47FMk0uKxdkG6X",
+              "0bEIu56nC9SS16wEsk4B9g",
+              "5hvq0TiMcZx5fjO5980vFh",
+              "0TtBI8L8ooOLNafmVjlS5y",
+              "5LdUmQ2ZFMLGkcvt3Lx83I",
+              "3lfyZHRZuyP6DVuXhm7NLW",
+              "2qJj9o3BZPnaT8JZbmjydM",
+              "06xHfBS3M9QLoilpl9D92F",
+              "3KlPASKm9QGTbNivOu22m5",
+              "20NyJRVAuCnbkqOBMJqy1R",
+              "4IRaRB5ulhPj4JcpMgLTpm"
+            ]
+          },
+          "images": {
+            "type": "array",
+            "title": "The images Schema",
+            "items": {},
+            "examples": [
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              []
+            ]
+          },
+          "name": {
+            "type": "string",
+            "title": "The name Schema",
+            "examples": [
+              "Updated PL_NAME",
+              "2nd playlist",
+              "Updated first Playlist"
+            ]
+          },
+          "owner": {
+            "type": "object",
+            "title": "The owner Schema",
+            "required": [
+              "display_name",
+              "external_urls",
+              "href",
+              "id",
+              "type",
+              "uri"
+            ],
+            "properties": {
+              "display_name": {
+                "type": "string",
+                "title": "The display_name Schema",
+                "examples": [
+                  "ankita"
+                ]
+              },
+              "external_urls": {
+                "type": "object",
+                "title": "The external_urls Schema",
+                "required": [
+                  "spotify"
+                ],
+                "properties": {
+                  "spotify": {
+                    "type": "string",
+                    "title": "The spotify Schema",
+                    "examples": [
+                      "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                    ]
+                  }
+                },
+                "examples": [{
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  },
+                  {
+                    "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                  }]
+              },
+              "href": {
+                "type": "string",
+                "title": "The href Schema",
+                "examples": [
+                  "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "title": "The id Schema",
+                "examples": [
+                  "31nlhiawfc75bhow26i52p2vbxoa"
+                ]
+              },
+              "type": {
+                "type": "string",
+                "title": "The type Schema",
+                "examples": [
+                  "user"
+                ]
+              },
+              "uri": {
+                "type": "string",
+                "title": "The uri Schema",
+                "examples": [
+                  "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+                ]
+              }
+            },
+            "examples": [{
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              {
+                "display_name": "ankita",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+                },
+                "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+                "id": "31nlhiawfc75bhow26i52p2vbxoa",
+                "type": "user",
+                "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+              }]
+          },
+          "primary_color": {
+            "type": "null",
+            "title": "The primary_color Schema",
+            "examples": [
+              null
+            ]
+          },
+          "public": {
+            "type": "boolean",
+            "title": "The public Schema",
+            "examples": [
+              false
+            ]
+          },
+          "snapshot_id": {
+            "type": "string",
+            "title": "The snapshot_id Schema",
+            "examples": [
+              "NCw1OThjZmUxOWY2YzFhOTZiNDk2NTBkZjdjOTVhODkxY2ViMzJmZjk0",
+              "NSxkNjk0MTM1ZWRhZGUyYzYzZjViMzY4NzFlZTYxMzI2YmQ5NjU1MmJh",
+              "NSw5ODkzZWEzYzRiM2IzMTI4ZDY3OWI1MTE5Yzc3YTUyOGFkMTM5MmE3",
+              "NSwwZGIxZDFmN2YxYzljNTU3NTU0YmY0OGI5MWE1NDk5YjdkMmU2NmFh",
+              "NSwwMTRkZDZhODEzNDRiZjQxY2RlZGRjNzMxN2NlYTY4YTg0MTQwY2Q5",
+              "NSwzMWE3Mzc3MjE1ZGU2YTBkYTYxMzYyZjRhZWRhZDQ2ZDY2M2ViMjc2",
+              "NSw1ZmM1MWJlYmFiYTBlYzExYjIzNTNjMjk4ZjY2MmZkNTljYjVhMjdj",
+              "NSw2MDQwYTI4MDMzMTc2YzVlZjU0MzA4OGI3N2UzMjRkOGRlYTNiNWVj",
+              "NCwxODhlZmFkZjg2MGVlOWRkMzQ4YTA4YzViZDZmMzlhNzgwMGY4NjFk",
+              "NSw4NWVkNzhlZGM0NjIzYTFkYTNkMjVlNDc2NzAwMDQxYzNiZWY3OWIy",
+              "NCw0MGQ3NDI1YTdkOWE2NThlYjUyNGFiZGJkMDczMDE4ODNiNzQzMzRh",
+              "NSxmNDM2OWZjNDQ3ZGZiNmIxMWJkMTY5ZTNjYjY1NWEyMzE0ZDAxZjM5",
+              "NSxhNTVhNDBmYTA2NjA0Yzc0YmVhZDk0ZjdmMjQ2NWYwMTM4ODAwM2Fi",
+              "NSw1OTZmMDJkYzViMGQwNTRlZjc0ZTgxNDc1NjgxMmIwZTRlNGQ3OThi",
+              "NSxlNTgxMDJjOGYwY2E3MTg4ZGFlMDVmNTc0NGQ2YzFmNzI3MWNkNTQ1",
+              "MixiMjk1YjNiMDYxYzhmZDFmZmRkYWUxNzg1MmQzN2E5NGRjZTBjODQy",
+              "NSxkZmM3ODBjZDI4OGFkNTFhNjMxNzRiY2MzYzQzZjNiNDg4OWU5MmVm",
+              "NSw4NjhkNGY3MmY5YzExNjE3M2YwYjIyNGRjNjhhYTNhZWM2ZDAwNWQ2",
+              "Miw1NzIxOGYyY2M5NjM5Mjc3YjhkNjM3MzFhMTEyNWU4YzMwZjE5NzIz",
+              "NSxmMThjYTNmZWVlNjk1ODEyZGIyMTM1NGM2Yzg4YzgyYzE3YzNkZjVl"
+            ]
+          },
+          "tracks": {
+            "type": "object",
+            "title": "The tracks Schema",
+            "required": [
+              "href",
+              "total"
+            ],
+            "properties": {
+              "href": {
+                "type": "string",
+                "title": "The href Schema",
+                "examples": [
+                  "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA/tracks",
+                  "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC/tracks",
+                  "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp/tracks",
+                  "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98/tracks",
+                  "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80/tracks",
+                  "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len/tracks",
+                  "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8/tracks",
+                  "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr/tracks",
+                  "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr/tracks",
+                  "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X/tracks",
+                  "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g/tracks",
+                  "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh/tracks",
+                  "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y/tracks",
+                  "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I/tracks",
+                  "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW/tracks",
+                  "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM/tracks",
+                  "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F/tracks",
+                  "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5/tracks",
+                  "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R/tracks",
+                  "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm/tracks"
+                ]
+              },
+              "total": {
+                "type": "integer",
+                "title": "The total Schema",
+                "examples": [
+                  0
+                ]
+              }
+            },
+            "examples": [{
+              "href": "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA/tracks",
+              "total": 0
+            },
+              {
+                "href": "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R/tracks",
+                "total": 0
+              },
+              {
+                "href": "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm/tracks",
+                "total": 0
+              }]
+          },
+          "type": {
+            "type": "string",
+            "title": "The type Schema",
+            "examples": [
+              "playlist"
+            ]
+          },
+          "uri": {
+            "type": "string",
+            "title": "The uri Schema",
+            "examples": [
+              "spotify:playlist:3TZpE4oGblaYIJcDXFk4oA",
+              "spotify:playlist:1RZmAswH26MZciFpC0XNKC",
+              "spotify:playlist:0zAwBomCOTrbZiTOWDpHZp",
+              "spotify:playlist:1dqNE80qxZrTGMqWxVdN98",
+              "spotify:playlist:0F9LO13oLjHLdM9ZYNxi80",
+              "spotify:playlist:07GthWlrpsj5XvG4Fm1len",
+              "spotify:playlist:5yhltShBAtekFXfSrnXba8",
+              "spotify:playlist:2jDfoKIwCTp4D8qzf0h1hr",
+              "spotify:playlist:0aNoAEeuH42KbZFi8OMMfr",
+              "spotify:playlist:3MEvF0Au47FMk0uKxdkG6X",
+              "spotify:playlist:0bEIu56nC9SS16wEsk4B9g",
+              "spotify:playlist:5hvq0TiMcZx5fjO5980vFh",
+              "spotify:playlist:0TtBI8L8ooOLNafmVjlS5y",
+              "spotify:playlist:5LdUmQ2ZFMLGkcvt3Lx83I",
+              "spotify:playlist:3lfyZHRZuyP6DVuXhm7NLW",
+              "spotify:playlist:2qJj9o3BZPnaT8JZbmjydM",
+              "spotify:playlist:06xHfBS3M9QLoilpl9D92F",
+              "spotify:playlist:3KlPASKm9QGTbNivOu22m5",
+              "spotify:playlist:20NyJRVAuCnbkqOBMJqy1R",
+              "spotify:playlist:4IRaRB5ulhPj4JcpMgLTpm"
+            ]
+          }
+        },
+        "examples": [{
+          "collaborative": false,
+          "description": "UPDATE the description",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/3TZpE4oGblaYIJcDXFk4oA"
+          },
+          "href": "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA",
+          "id": "3TZpE4oGblaYIJcDXFk4oA",
+          "images": [],
+          "name": "Updated PL_NAME",
+          "owner": {
+            "display_name": "ankita",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+            "id": "31nlhiawfc75bhow26i52p2vbxoa",
+            "type": "user",
+            "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "NCw1OThjZmUxOWY2YzFhOTZiNDk2NTBkZjdjOTVhODkxY2ViMzJmZjk0",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA/tracks",
+            "total": 0
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:3TZpE4oGblaYIJcDXFk4oA"
+        },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/1RZmAswH26MZciFpC0XNKC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC",
+            "id": "1RZmAswH26MZciFpC0XNKC",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxkNjk0MTM1ZWRhZGUyYzYzZjViMzY4NzFlZTYxMzI2YmQ5NjU1MmJh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1RZmAswH26MZciFpC0XNKC"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0zAwBomCOTrbZiTOWDpHZp"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp",
+            "id": "0zAwBomCOTrbZiTOWDpHZp",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw5ODkzZWEzYzRiM2IzMTI4ZDY3OWI1MTE5Yzc3YTUyOGFkMTM5MmE3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0zAwBomCOTrbZiTOWDpHZp"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/1dqNE80qxZrTGMqWxVdN98"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98",
+            "id": "1dqNE80qxZrTGMqWxVdN98",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSwwZGIxZDFmN2YxYzljNTU3NTU0YmY0OGI5MWE1NDk5YjdkMmU2NmFh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1dqNE80qxZrTGMqWxVdN98"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0F9LO13oLjHLdM9ZYNxi80"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80",
+            "id": "0F9LO13oLjHLdM9ZYNxi80",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSwwMTRkZDZhODEzNDRiZjQxY2RlZGRjNzMxN2NlYTY4YTg0MTQwY2Q5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0F9LO13oLjHLdM9ZYNxi80"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/07GthWlrpsj5XvG4Fm1len"
+            },
+            "href": "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len",
+            "id": "07GthWlrpsj5XvG4Fm1len",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSwzMWE3Mzc3MjE1ZGU2YTBkYTYxMzYyZjRhZWRhZDQ2ZDY2M2ViMjc2",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:07GthWlrpsj5XvG4Fm1len"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/5yhltShBAtekFXfSrnXba8"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8",
+            "id": "5yhltShBAtekFXfSrnXba8",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw1ZmM1MWJlYmFiYTBlYzExYjIzNTNjMjk4ZjY2MmZkNTljYjVhMjdj",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5yhltShBAtekFXfSrnXba8"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/2jDfoKIwCTp4D8qzf0h1hr"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr",
+            "id": "2jDfoKIwCTp4D8qzf0h1hr",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw2MDQwYTI4MDMzMTc2YzVlZjU0MzA4OGI3N2UzMjRkOGRlYTNiNWVj",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2jDfoKIwCTp4D8qzf0h1hr"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0aNoAEeuH42KbZFi8OMMfr"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr",
+            "id": "0aNoAEeuH42KbZFi8OMMfr",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NCwxODhlZmFkZjg2MGVlOWRkMzQ4YTA4YzViZDZmMzlhNzgwMGY4NjFk",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0aNoAEeuH42KbZFi8OMMfr"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/3MEvF0Au47FMk0uKxdkG6X"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X",
+            "id": "3MEvF0Au47FMk0uKxdkG6X",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw4NWVkNzhlZGM0NjIzYTFkYTNkMjVlNDc2NzAwMDQxYzNiZWY3OWIy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3MEvF0Au47FMk0uKxdkG6X"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0bEIu56nC9SS16wEsk4B9g"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g",
+            "id": "0bEIu56nC9SS16wEsk4B9g",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NCw0MGQ3NDI1YTdkOWE2NThlYjUyNGFiZGJkMDczMDE4ODNiNzQzMzRh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0bEIu56nC9SS16wEsk4B9g"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/5hvq0TiMcZx5fjO5980vFh"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh",
+            "id": "5hvq0TiMcZx5fjO5980vFh",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxmNDM2OWZjNDQ3ZGZiNmIxMWJkMTY5ZTNjYjY1NWEyMzE0ZDAxZjM5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5hvq0TiMcZx5fjO5980vFh"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0TtBI8L8ooOLNafmVjlS5y"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y",
+            "id": "0TtBI8L8ooOLNafmVjlS5y",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxhNTVhNDBmYTA2NjA0Yzc0YmVhZDk0ZjdmMjQ2NWYwMTM4ODAwM2Fi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0TtBI8L8ooOLNafmVjlS5y"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/5LdUmQ2ZFMLGkcvt3Lx83I"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I",
+            "id": "5LdUmQ2ZFMLGkcvt3Lx83I",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw1OTZmMDJkYzViMGQwNTRlZjc0ZTgxNDc1NjgxMmIwZTRlNGQ3OThi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5LdUmQ2ZFMLGkcvt3Lx83I"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/3lfyZHRZuyP6DVuXhm7NLW"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW",
+            "id": "3lfyZHRZuyP6DVuXhm7NLW",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxlNTgxMDJjOGYwY2E3MTg4ZGFlMDVmNTc0NGQ2YzFmNzI3MWNkNTQ1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3lfyZHRZuyP6DVuXhm7NLW"
+          },
+          {
+            "collaborative": false,
+            "description": "New 2nd playlist description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/2qJj9o3BZPnaT8JZbmjydM"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM",
+            "id": "2qJj9o3BZPnaT8JZbmjydM",
+            "images": [],
+            "name": "2nd playlist",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MixiMjk1YjNiMDYxYzhmZDFmZmRkYWUxNzg1MmQzN2E5NGRjZTBjODQy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2qJj9o3BZPnaT8JZbmjydM"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/06xHfBS3M9QLoilpl9D92F"
+            },
+            "href": "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F",
+            "id": "06xHfBS3M9QLoilpl9D92F",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxkZmM3ODBjZDI4OGFkNTFhNjMxNzRiY2MzYzQzZjNiNDg4OWU5MmVm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:06xHfBS3M9QLoilpl9D92F"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/3KlPASKm9QGTbNivOu22m5"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5",
+            "id": "3KlPASKm9QGTbNivOu22m5",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw4NjhkNGY3MmY5YzExNjE3M2YwYjIyNGRjNjhhYTNhZWM2ZDAwNWQ2",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3KlPASKm9QGTbNivOu22m5"
+          },
+          {
+            "collaborative": false,
+            "description": "New 2nd playlist description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/20NyJRVAuCnbkqOBMJqy1R"
+            },
+            "href": "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R",
+            "id": "20NyJRVAuCnbkqOBMJqy1R",
+            "images": [],
+            "name": "2nd playlist",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "Miw1NzIxOGYyY2M5NjM5Mjc3YjhkNjM3MzFhMTEyNWU4YzMwZjE5NzIz",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:20NyJRVAuCnbkqOBMJqy1R"
+          },
+          {
+            "collaborative": false,
+            "description": "Updated first playlist description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/4IRaRB5ulhPj4JcpMgLTpm"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm",
+            "id": "4IRaRB5ulhPj4JcpMgLTpm",
+            "images": [],
+            "name": "Updated first Playlist",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxmMThjYTNmZWVlNjk1ODEyZGIyMTM1NGM2Yzg4YzgyYzE3YzNkZjVl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:4IRaRB5ulhPj4JcpMgLTpm"
+          }]
+      },
+      "examples": [
+        [{
+          "collaborative": false,
+          "description": "UPDATE the description",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/3TZpE4oGblaYIJcDXFk4oA"
+          },
+          "href": "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA",
+          "id": "3TZpE4oGblaYIJcDXFk4oA",
+          "images": [],
+          "name": "Updated PL_NAME",
+          "owner": {
+            "display_name": "ankita",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+            "id": "31nlhiawfc75bhow26i52p2vbxoa",
+            "type": "user",
+            "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "NCw1OThjZmUxOWY2YzFhOTZiNDk2NTBkZjdjOTVhODkxY2ViMzJmZjk0",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA/tracks",
+            "total": 0
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:3TZpE4oGblaYIJcDXFk4oA"
+        },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/1RZmAswH26MZciFpC0XNKC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC",
+            "id": "1RZmAswH26MZciFpC0XNKC",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxkNjk0MTM1ZWRhZGUyYzYzZjViMzY4NzFlZTYxMzI2YmQ5NjU1MmJh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1RZmAswH26MZciFpC0XNKC"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0zAwBomCOTrbZiTOWDpHZp"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp",
+            "id": "0zAwBomCOTrbZiTOWDpHZp",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw5ODkzZWEzYzRiM2IzMTI4ZDY3OWI1MTE5Yzc3YTUyOGFkMTM5MmE3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0zAwBomCOTrbZiTOWDpHZp"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/1dqNE80qxZrTGMqWxVdN98"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98",
+            "id": "1dqNE80qxZrTGMqWxVdN98",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSwwZGIxZDFmN2YxYzljNTU3NTU0YmY0OGI5MWE1NDk5YjdkMmU2NmFh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1dqNE80qxZrTGMqWxVdN98"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0F9LO13oLjHLdM9ZYNxi80"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80",
+            "id": "0F9LO13oLjHLdM9ZYNxi80",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSwwMTRkZDZhODEzNDRiZjQxY2RlZGRjNzMxN2NlYTY4YTg0MTQwY2Q5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0F9LO13oLjHLdM9ZYNxi80"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/07GthWlrpsj5XvG4Fm1len"
+            },
+            "href": "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len",
+            "id": "07GthWlrpsj5XvG4Fm1len",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSwzMWE3Mzc3MjE1ZGU2YTBkYTYxMzYyZjRhZWRhZDQ2ZDY2M2ViMjc2",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:07GthWlrpsj5XvG4Fm1len"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/5yhltShBAtekFXfSrnXba8"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8",
+            "id": "5yhltShBAtekFXfSrnXba8",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw1ZmM1MWJlYmFiYTBlYzExYjIzNTNjMjk4ZjY2MmZkNTljYjVhMjdj",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5yhltShBAtekFXfSrnXba8"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/2jDfoKIwCTp4D8qzf0h1hr"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr",
+            "id": "2jDfoKIwCTp4D8qzf0h1hr",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw2MDQwYTI4MDMzMTc2YzVlZjU0MzA4OGI3N2UzMjRkOGRlYTNiNWVj",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2jDfoKIwCTp4D8qzf0h1hr"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0aNoAEeuH42KbZFi8OMMfr"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr",
+            "id": "0aNoAEeuH42KbZFi8OMMfr",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NCwxODhlZmFkZjg2MGVlOWRkMzQ4YTA4YzViZDZmMzlhNzgwMGY4NjFk",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0aNoAEeuH42KbZFi8OMMfr"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/3MEvF0Au47FMk0uKxdkG6X"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X",
+            "id": "3MEvF0Au47FMk0uKxdkG6X",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw4NWVkNzhlZGM0NjIzYTFkYTNkMjVlNDc2NzAwMDQxYzNiZWY3OWIy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3MEvF0Au47FMk0uKxdkG6X"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0bEIu56nC9SS16wEsk4B9g"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g",
+            "id": "0bEIu56nC9SS16wEsk4B9g",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NCw0MGQ3NDI1YTdkOWE2NThlYjUyNGFiZGJkMDczMDE4ODNiNzQzMzRh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0bEIu56nC9SS16wEsk4B9g"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/5hvq0TiMcZx5fjO5980vFh"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh",
+            "id": "5hvq0TiMcZx5fjO5980vFh",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxmNDM2OWZjNDQ3ZGZiNmIxMWJkMTY5ZTNjYjY1NWEyMzE0ZDAxZjM5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5hvq0TiMcZx5fjO5980vFh"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/0TtBI8L8ooOLNafmVjlS5y"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y",
+            "id": "0TtBI8L8ooOLNafmVjlS5y",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxhNTVhNDBmYTA2NjA0Yzc0YmVhZDk0ZjdmMjQ2NWYwMTM4ODAwM2Fi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0TtBI8L8ooOLNafmVjlS5y"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/5LdUmQ2ZFMLGkcvt3Lx83I"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I",
+            "id": "5LdUmQ2ZFMLGkcvt3Lx83I",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw1OTZmMDJkYzViMGQwNTRlZjc0ZTgxNDc1NjgxMmIwZTRlNGQ3OThi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5LdUmQ2ZFMLGkcvt3Lx83I"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/3lfyZHRZuyP6DVuXhm7NLW"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW",
+            "id": "3lfyZHRZuyP6DVuXhm7NLW",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxlNTgxMDJjOGYwY2E3MTg4ZGFlMDVmNTc0NGQ2YzFmNzI3MWNkNTQ1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3lfyZHRZuyP6DVuXhm7NLW"
+          },
+          {
+            "collaborative": false,
+            "description": "New 2nd playlist description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/2qJj9o3BZPnaT8JZbmjydM"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM",
+            "id": "2qJj9o3BZPnaT8JZbmjydM",
+            "images": [],
+            "name": "2nd playlist",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MixiMjk1YjNiMDYxYzhmZDFmZmRkYWUxNzg1MmQzN2E5NGRjZTBjODQy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2qJj9o3BZPnaT8JZbmjydM"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/06xHfBS3M9QLoilpl9D92F"
+            },
+            "href": "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F",
+            "id": "06xHfBS3M9QLoilpl9D92F",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxkZmM3ODBjZDI4OGFkNTFhNjMxNzRiY2MzYzQzZjNiNDg4OWU5MmVm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:06xHfBS3M9QLoilpl9D92F"
+          },
+          {
+            "collaborative": false,
+            "description": "UPDATE the description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/3KlPASKm9QGTbNivOu22m5"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5",
+            "id": "3KlPASKm9QGTbNivOu22m5",
+            "images": [],
+            "name": "Updated PL_NAME",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSw4NjhkNGY3MmY5YzExNjE3M2YwYjIyNGRjNjhhYTNhZWM2ZDAwNWQ2",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3KlPASKm9QGTbNivOu22m5"
+          },
+          {
+            "collaborative": false,
+            "description": "New 2nd playlist description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/20NyJRVAuCnbkqOBMJqy1R"
+            },
+            "href": "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R",
+            "id": "20NyJRVAuCnbkqOBMJqy1R",
+            "images": [],
+            "name": "2nd playlist",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "Miw1NzIxOGYyY2M5NjM5Mjc3YjhkNjM3MzFhMTEyNWU4YzMwZjE5NzIz",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:20NyJRVAuCnbkqOBMJqy1R"
+          },
+          {
+            "collaborative": false,
+            "description": "Updated first playlist description",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/4IRaRB5ulhPj4JcpMgLTpm"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm",
+            "id": "4IRaRB5ulhPj4JcpMgLTpm",
+            "images": [],
+            "name": "Updated first Playlist",
+            "owner": {
+              "display_name": "ankita",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+              },
+              "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+              "id": "31nlhiawfc75bhow26i52p2vbxoa",
+              "type": "user",
+              "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NSxmMThjYTNmZWVlNjk1ODEyZGIyMTM1NGM2Yzg4YzgyYzE3YzNkZjVl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm/tracks",
+              "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:4IRaRB5ulhPj4JcpMgLTpm"
+          }]
+      ]
+    },
+    "limit": {
+      "type": "integer",
+      "default": 0,
+      "title": "The limit Schema",
+      "examples": [
+        20
+      ]
+    },
+    "next": {
+      "type": "string",
+      "default": "",
+      "title": "The next Schema",
+      "examples": [
+        "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa/playlists?offset=20\u0026limit=20"
+      ]
+    },
+    "offset": {
+      "type": "integer",
+      "default": 0,
+      "title": "The offset Schema",
+      "examples": [
+        0
+      ]
+    },
+    "previous": {
+      "type": "null",
+      "default": null,
+      "title": "The previous Schema",
+      "examples": [
+        null
+      ]
+    },
+    "total": {
+      "type": "integer",
+      "default": 0,
+      "title": "The total Schema",
+      "examples": [
+        58
+      ]
+    }
+  },
+  "examples": [{
+    "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa/playlists?offset=0\u0026limit=20",
+    "items": [{
+      "collaborative": false,
+      "description": "UPDATE the description",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3TZpE4oGblaYIJcDXFk4oA"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA",
+      "id": "3TZpE4oGblaYIJcDXFk4oA",
+      "images": [],
+      "name": "Updated PL_NAME",
+      "owner": {
+        "display_name": "ankita",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+        "id": "31nlhiawfc75bhow26i52p2vbxoa",
+        "type": "user",
+        "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+      },
+      "primary_color": null,
+      "public": false,
+      "snapshot_id": "NCw1OThjZmUxOWY2YzFhOTZiNDk2NTBkZjdjOTVhODkxY2ViMzJmZjk0",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3TZpE4oGblaYIJcDXFk4oA/tracks",
+        "total": 0
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3TZpE4oGblaYIJcDXFk4oA"
+    },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/1RZmAswH26MZciFpC0XNKC"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC",
+        "id": "1RZmAswH26MZciFpC0XNKC",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSxkNjk0MTM1ZWRhZGUyYzYzZjViMzY4NzFlZTYxMzI2YmQ5NjU1MmJh",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/1RZmAswH26MZciFpC0XNKC/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1RZmAswH26MZciFpC0XNKC"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0zAwBomCOTrbZiTOWDpHZp"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp",
+        "id": "0zAwBomCOTrbZiTOWDpHZp",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSw5ODkzZWEzYzRiM2IzMTI4ZDY3OWI1MTE5Yzc3YTUyOGFkMTM5MmE3",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0zAwBomCOTrbZiTOWDpHZp/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0zAwBomCOTrbZiTOWDpHZp"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/1dqNE80qxZrTGMqWxVdN98"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98",
+        "id": "1dqNE80qxZrTGMqWxVdN98",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSwwZGIxZDFmN2YxYzljNTU3NTU0YmY0OGI5MWE1NDk5YjdkMmU2NmFh",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/1dqNE80qxZrTGMqWxVdN98/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1dqNE80qxZrTGMqWxVdN98"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0F9LO13oLjHLdM9ZYNxi80"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80",
+        "id": "0F9LO13oLjHLdM9ZYNxi80",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSwwMTRkZDZhODEzNDRiZjQxY2RlZGRjNzMxN2NlYTY4YTg0MTQwY2Q5",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0F9LO13oLjHLdM9ZYNxi80/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0F9LO13oLjHLdM9ZYNxi80"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/07GthWlrpsj5XvG4Fm1len"
+        },
+        "href": "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len",
+        "id": "07GthWlrpsj5XvG4Fm1len",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSwzMWE3Mzc3MjE1ZGU2YTBkYTYxMzYyZjRhZWRhZDQ2ZDY2M2ViMjc2",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/07GthWlrpsj5XvG4Fm1len/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:07GthWlrpsj5XvG4Fm1len"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/5yhltShBAtekFXfSrnXba8"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8",
+        "id": "5yhltShBAtekFXfSrnXba8",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSw1ZmM1MWJlYmFiYTBlYzExYjIzNTNjMjk4ZjY2MmZkNTljYjVhMjdj",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/5yhltShBAtekFXfSrnXba8/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5yhltShBAtekFXfSrnXba8"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/2jDfoKIwCTp4D8qzf0h1hr"
+        },
+        "href": "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr",
+        "id": "2jDfoKIwCTp4D8qzf0h1hr",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSw2MDQwYTI4MDMzMTc2YzVlZjU0MzA4OGI3N2UzMjRkOGRlYTNiNWVj",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/2jDfoKIwCTp4D8qzf0h1hr/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:2jDfoKIwCTp4D8qzf0h1hr"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0aNoAEeuH42KbZFi8OMMfr"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr",
+        "id": "0aNoAEeuH42KbZFi8OMMfr",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NCwxODhlZmFkZjg2MGVlOWRkMzQ4YTA4YzViZDZmMzlhNzgwMGY4NjFk",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0aNoAEeuH42KbZFi8OMMfr/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0aNoAEeuH42KbZFi8OMMfr"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/3MEvF0Au47FMk0uKxdkG6X"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X",
+        "id": "3MEvF0Au47FMk0uKxdkG6X",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSw4NWVkNzhlZGM0NjIzYTFkYTNkMjVlNDc2NzAwMDQxYzNiZWY3OWIy",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/3MEvF0Au47FMk0uKxdkG6X/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3MEvF0Au47FMk0uKxdkG6X"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0bEIu56nC9SS16wEsk4B9g"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g",
+        "id": "0bEIu56nC9SS16wEsk4B9g",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NCw0MGQ3NDI1YTdkOWE2NThlYjUyNGFiZGJkMDczMDE4ODNiNzQzMzRh",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0bEIu56nC9SS16wEsk4B9g/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0bEIu56nC9SS16wEsk4B9g"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/5hvq0TiMcZx5fjO5980vFh"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh",
+        "id": "5hvq0TiMcZx5fjO5980vFh",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSxmNDM2OWZjNDQ3ZGZiNmIxMWJkMTY5ZTNjYjY1NWEyMzE0ZDAxZjM5",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/5hvq0TiMcZx5fjO5980vFh/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5hvq0TiMcZx5fjO5980vFh"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0TtBI8L8ooOLNafmVjlS5y"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y",
+        "id": "0TtBI8L8ooOLNafmVjlS5y",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSxhNTVhNDBmYTA2NjA0Yzc0YmVhZDk0ZjdmMjQ2NWYwMTM4ODAwM2Fi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0TtBI8L8ooOLNafmVjlS5y/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0TtBI8L8ooOLNafmVjlS5y"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/5LdUmQ2ZFMLGkcvt3Lx83I"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I",
+        "id": "5LdUmQ2ZFMLGkcvt3Lx83I",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSw1OTZmMDJkYzViMGQwNTRlZjc0ZTgxNDc1NjgxMmIwZTRlNGQ3OThi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/5LdUmQ2ZFMLGkcvt3Lx83I/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5LdUmQ2ZFMLGkcvt3Lx83I"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/3lfyZHRZuyP6DVuXhm7NLW"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW",
+        "id": "3lfyZHRZuyP6DVuXhm7NLW",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSxlNTgxMDJjOGYwY2E3MTg4ZGFlMDVmNTc0NGQ2YzFmNzI3MWNkNTQ1",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/3lfyZHRZuyP6DVuXhm7NLW/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3lfyZHRZuyP6DVuXhm7NLW"
+      },
+      {
+        "collaborative": false,
+        "description": "New 2nd playlist description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/2qJj9o3BZPnaT8JZbmjydM"
+        },
+        "href": "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM",
+        "id": "2qJj9o3BZPnaT8JZbmjydM",
+        "images": [],
+        "name": "2nd playlist",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MixiMjk1YjNiMDYxYzhmZDFmZmRkYWUxNzg1MmQzN2E5NGRjZTBjODQy",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/2qJj9o3BZPnaT8JZbmjydM/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:2qJj9o3BZPnaT8JZbmjydM"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/06xHfBS3M9QLoilpl9D92F"
+        },
+        "href": "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F",
+        "id": "06xHfBS3M9QLoilpl9D92F",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSxkZmM3ODBjZDI4OGFkNTFhNjMxNzRiY2MzYzQzZjNiNDg4OWU5MmVm",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/06xHfBS3M9QLoilpl9D92F/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:06xHfBS3M9QLoilpl9D92F"
+      },
+      {
+        "collaborative": false,
+        "description": "UPDATE the description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/3KlPASKm9QGTbNivOu22m5"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5",
+        "id": "3KlPASKm9QGTbNivOu22m5",
+        "images": [],
+        "name": "Updated PL_NAME",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSw4NjhkNGY3MmY5YzExNjE3M2YwYjIyNGRjNjhhYTNhZWM2ZDAwNWQ2",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/3KlPASKm9QGTbNivOu22m5/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3KlPASKm9QGTbNivOu22m5"
+      },
+      {
+        "collaborative": false,
+        "description": "New 2nd playlist description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/20NyJRVAuCnbkqOBMJqy1R"
+        },
+        "href": "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R",
+        "id": "20NyJRVAuCnbkqOBMJqy1R",
+        "images": [],
+        "name": "2nd playlist",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "Miw1NzIxOGYyY2M5NjM5Mjc3YjhkNjM3MzFhMTEyNWU4YzMwZjE5NzIz",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/20NyJRVAuCnbkqOBMJqy1R/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:20NyJRVAuCnbkqOBMJqy1R"
+      },
+      {
+        "collaborative": false,
+        "description": "Updated first playlist description",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/4IRaRB5ulhPj4JcpMgLTpm"
+        },
+        "href": "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm",
+        "id": "4IRaRB5ulhPj4JcpMgLTpm",
+        "images": [],
+        "name": "Updated first Playlist",
+        "owner": {
+          "display_name": "ankita",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31nlhiawfc75bhow26i52p2vbxoa"
+          },
+          "href": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa",
+          "id": "31nlhiawfc75bhow26i52p2vbxoa",
+          "type": "user",
+          "uri": "spotify:user:31nlhiawfc75bhow26i52p2vbxoa"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSxmMThjYTNmZWVlNjk1ODEyZGIyMTM1NGM2Yzg4YzgyYzE3YzNkZjVl",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/4IRaRB5ulhPj4JcpMgLTpm/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:4IRaRB5ulhPj4JcpMgLTpm"
+      }],
+    "limit": 20,
+    "next": "https://api.spotify.com/v1/users/31nlhiawfc75bhow26i52p2vbxoa/playlists?offset=20\u0026limit=20",
+    "offset": 0,
+    "previous": null,
+    "total": 58
+  }]
+}
